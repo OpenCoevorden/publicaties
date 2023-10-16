@@ -40,6 +40,6 @@ jobs:
           git add -u
           git add docs/*
           git status
-          git commit -m "Convert PDF to HTML and generate sitemap"
+          git commit -m "Generate sitemap"
           git push
           
