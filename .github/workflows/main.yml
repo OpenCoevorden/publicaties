@@ -32,11 +32,6 @@ jobs:
           done
           echo "</urlset>" >> sitemap.xml
 
-      - name: Copy file from publicatie to documenten
-        run: |
-          cp publicatie/docs/include.html docs/include.html
-        working-directory: ${{ github.workspace }}
-
 
       - name: Commit changes
         run: |
