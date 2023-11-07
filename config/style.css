@@ -1,0 +1,62 @@
+ /* CSS styles for the layout */
+  body {
+
+    margin: 0;
+    font-family: arial, "Open Sans", sans-serif;
+    font-weight: normal;
+    line-height: 1.71;
+    letter-spacing: 0;
+
+}
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      list-style-type: none;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    ul {
+      padding: 0px;
+    }
+
+    #searchInput {
+      width: 95%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      text-align: center;
+      outline: none;
+      margin-bottom: 10px;
+      background-color: #98b500;
+    }
+
+    #searchInput::placeholder {
+      color: black;
+    }
+
+    #searchInput:focus::placeholder {
+      color: #ffffff;
+      border: none;
+    }
+
+    .prefix {
+      margin-right: 10px;
+      min-width: 100px;
+      height: 35px;
+      background-color: #685c80;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li.searchable a {
+    max-width: 80%;
+}
