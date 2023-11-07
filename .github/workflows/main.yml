@@ -42,4 +42,3 @@ jobs:
           git status
           git commit -m "Generate sitemap"
           git push
-
