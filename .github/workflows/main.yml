@@ -32,6 +32,9 @@ jobs:
           done
           echo "</urlset>" >> sitemap.xml
 
+      - name: copy files from config
+        run: |
+          cp -r config/* docs/      
 
       - name: Commit changes
         run: |
