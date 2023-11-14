@@ -31,7 +31,7 @@ async function fetchPDFs() {
 
                         // Maak de link naar het PDF-bestand en voeg deze toe aan het lijstitem
                         const link = document.createElement('a');
-                        link.href = `https://${repoOwner}.github.io/${repoName}/${item.name}`;
+                        link.href = `https://opencoevorden.nl/${item.name}`;
                         link.textContent = item.name.split(' ').slice(1).join(' '); // Neem het deel na het eerste "-"
                         link.target = '_blank'; // Open de link in een nieuw tabblad
                         listItem.appendChild(link);
@@ -56,7 +56,7 @@ async function fetchPDFs() {
 var link = document.createElement("link");
 link.rel = "stylesheet";
 link.type = "text/css";
-link.href = "https://opencoevorden.github.io/publicaties/style.css"; // Vervang dit door het pad naar jouw CSS-bestand
+link.href = "https://opencoevorden.nl/style.css"; // Vervang dit door het pad naar jouw CSS-bestand
 
 
             //voer script uit
