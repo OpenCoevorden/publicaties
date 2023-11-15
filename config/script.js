@@ -52,15 +52,7 @@ async function fetchPDFs() {
 }
 
 
-// Maak een nieuw link-element aan om het CSS-bestand te laden
-var link = document.createElement("link");
-link.rel = "stylesheet";
-link.type = "text/css";
-link.href = "https://opencoevorden.nl/style.css"; // Vervang dit door het pad naar jouw CSS-bestand
-
-
             //voer script uit
             fetchPDFs();
 
-            // Voeg het css in
-            document.head.appendChild(link);
+
