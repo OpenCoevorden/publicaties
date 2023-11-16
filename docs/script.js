@@ -1,12 +1,15 @@
 const repoOwner = 'OpenCoevorden';
 const repoName = 'publicaties';
 const pathToDocs = 'docs/'; // Het pad naar de map met PDF-bestanden
-const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${pathToDocs}?sort=desc`;
+const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${pathToDocs}`;
 
 async function fetchPDFs() {
     try {
         const response = await fetch(apiUrl);
         const data = await response.json();
+        
+          // Omgekeerde sortering van de data
+        const reverseddata = data.slice().reverse();      
 
         console.log('Opgehaalde gegevens:', data);
 
@@ -17,7 +20,7 @@ async function fetchPDFs() {
             const searchTerm = searchInput.value.toLowerCase();
             pdfList.innerHTML = ''; // Leeg de lijst voordat je opnieuw gaat filteren
             
-            data.forEach(item => {
+            reverseddata.forEach(item => {
                 if (item.name.endsWith('.pdf')) {
                     const fileName = item.name.toLowerCase();
                     if (fileName.includes(searchTerm)) {
