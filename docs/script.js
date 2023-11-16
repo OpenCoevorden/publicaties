@@ -1,7 +1,7 @@
 const repoOwner = 'OpenCoevorden';
 const repoName = 'publicaties';
 const pathToDocs = 'docs/'; // Het pad naar de map met PDF-bestanden
-const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${pathToDocs}`;
+const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${pathToDocs}?sort=desc`;
 
 async function fetchPDFs() {
     try {
