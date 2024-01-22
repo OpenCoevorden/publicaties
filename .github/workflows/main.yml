@@ -15,22 +15,22 @@ jobs:
 
       - name: Remove existing sitemap
         run: |
-          rm -f gepubliceerd/sitemap.xml
+          rm -f gepubliceerd/sitemap2.xml
 
 
 
-      - name: Generate sitemap.xml
+      - name: Generate sitemap2.xml
         run: |
           cd docs/
-          echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" > sitemap.xml
-          echo "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">" >> sitemap.xml
+          echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" > sitemap2.xml
+          echo "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">" >> sitemap2.xml
           for file in *.pdf; do
             filename=$(basename "$file" .pdf)
-            echo "  <url>" >> sitemap.xml
-            echo "    <loc>https://opencoevorden.nl/$(echo "$filename" | sed 's/ /%20/g').pdf</loc>" >> sitemap.xml
-            echo "  </url>" >> sitemap.xml
+            echo "  <url>" >> sitemap2.xml
+            echo "    <loc>https://opencoevorden.nl/$(echo "$filename").pdf</loc>" >> sitemap2.xml
+            echo "  </url>" >> sitemap2.xml
           done
-          echo "</urlset>" >> sitemap.xml
+          echo "</urlset>" >> sitemap2.xml
 
       - name: copy files from config
         run: |
