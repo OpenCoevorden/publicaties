@@ -1,39 +1,104 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="styling-rekenhulp.css" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<title>Rekentool voor het inzamelen van uw afval</title>
-</head>
-<body>
-<header class="header">
-    <h1>Rekentool voor het inzamelen van uw afval</h1>
-</header>
-<main>
-    <div class="container mt-4">
-        <h2>Ik maak gebruik van een:</h2>
-        <fieldset>
-            <legend class="visually-hidden">Afval type</legend>
-            <div class="form-check">
-                <input type="radio" name="afvalType" value="persoonlijk" id="persoonlijk" class="form-check-input" checked>
-                <label for="persoonlijk" class="form-check-label">Persoonlijke restafvalcontainer</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" name="afvalType" value="ondergronds" id="ondergronds" class="form-check-input">
-                <label for="ondergronds" class="form-check-label">Ondergrondse verzamelcontainer</label>
-            </div>
-        </fieldset>
-        <div class="mb-3">
-            <label for="aantal" class="form-label">Aantal ledigingen of inworpen:</label>
-            <input type="number" class="form-control" id="aantal" aria-describedby="aantalHelp" min="0">
-            <div id="aantalHelp" class="form-text">Voer het aantal ledigingen of inworpen in.</div>
-        </div>
-        <button id="bereken" class="btn btn-primary">Bereken kosten</button>
-        <p id="totaalBedrag" class="fs-4 mt-3"></p>
-    </div>
-</main>
-<script src="script.js"></script>
-</body>
-</html>
+html {
+    font-size: 16px; /* Standaard fontgrootte van het root element */
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #000;
+    margin: 0;
+    font-size: 1.8rem; /* Dit betekent 1.8 * 16px = 28.8px */
+    font-family: Arial, "Open Sans", sans-serif;
+    font-weight: normal;
+    line-height: 1.71;
+    letter-spacing: 0;
+    text-align: left; /* Lijn de tekst links uit */
+}
+
+.header {
+    background-color: #663366; /* Paars bovenin */
+    color: #ffffff;
+    padding: 20px;
+    text-align: left;
+}
+
+h1 {
+    color: #000;
+    font-size: 3.2rem; /* Dit betekent 3.2 * 16px = 51.2px */
+    margin-top: 0;
+    font-family: Arial, "Open Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0.5em;
+    letter-spacing: 0;
+    text-align: left; /* Lijn de tekst links uit */
+}
+
+h2 {
+    color: #000;
+    font-size: 2.4rem; /* Dit betekent 2.4 * 16px = 38.4px */
+    margin-top: 0;
+    font-family: Arial, "Open Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1.71;
+    margin-bottom: 1em;
+    letter-spacing: 0;
+    text-align: left; /* Lijn de tekst links uit */
+}
+
+.form-label, .form-check-label, .fs-4 {
+    color: #000000; /* Consistent gebruik van zwart voor tekst */
+    text-align: left;
+}
+
+.btn-primary {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 2.1rem; /* Dit betekent 2.1 * 16px = 33.6px */
+    box-shadow: none;
+    transition: none;
+    font-weight: 400;
+    line-height: 1.71;
+    border-width: 0;
+    border-radius: 0;
+    text-decoration: none;
+    background-color: #95b521; /* Knop kleur */
+    color: #ffffff;
+    text-align: left; /* Lijn de tekst links uit */
+}
+
+.btn-primary:hover {
+    background-color: #663366; /* Kleur bij hover */
+    color: #ffffff; /* Tekstkleur bij hover */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Lijn de tekst links uit */
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Stijlen voor inputvelden */
+input[type="number"] {
+    border: 1px solid #ccc; /* Dun grijs lijntje */
+    border-radius: 4px; /* Afgeronde hoeken */
+}
+
+/* Verwijder border van fieldset */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
