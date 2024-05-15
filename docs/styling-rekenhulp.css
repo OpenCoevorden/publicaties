@@ -9,13 +9,6 @@ body {
     letter-spacing: 0;
 }
 
-.header {
-    background-color: #663366; /* Paars bovenin */
-    color: #ffffff;
-    padding: 20px;
-    text-align: left;
-}
-
 h1, h2 {
     color: #663366; /* Paars voor titels */
     text-align: left;
@@ -63,4 +56,17 @@ h1, h2 {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+/* Stijlen voor inputvelden */
+input[type="number"] {
+    border: 1px solid #ccc; /* Dun grijs lijntje */
+    border-radius: 4px; /* Afgeronde hoeken */
+}
+
+/* Verwijder border van fieldset */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
 }
