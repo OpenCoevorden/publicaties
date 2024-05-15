@@ -1,17 +1,45 @@
+html {
+    font-size: 16px; /* Standaard fontgrootte van het root element */
+}
+
 body {
     background-color: #FFFFFF;
     color: #000;
     margin: 0;
-    font-size: 14px;
+    font-size: 1.8rem; /* Dit betekent 1.8 * 16px = 28.8px */
     font-family: Arial, "Open Sans", sans-serif;
     font-weight: normal;
     line-height: 1.71;
     letter-spacing: 0;
 }
 
-h1, h2 {
-    color: #663366; /* Paars voor titels */
+.header {
+    background-color: #663366; /* Paars bovenin */
+    color: #ffffff;
+    padding: 20px;
     text-align: left;
+}
+
+h1 {
+    color: #000;
+    font-size: 3.2rem; /* Dit betekent 3.2 * 16px = 51.2px */
+    margin-top: 0;
+    font-family: Arial, "Open Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0.5em;
+    letter-spacing: 0;
+}
+
+h2 {
+    color: #000;
+    font-size: 2.4rem; /* Dit betekent 2.4 * 16px = 38.4px */
+    margin-top: 0;
+    font-family: Arial, "Open Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1.71;
+    margin-bottom: 1em;
+    letter-spacing: 0;
 }
 
 .form-label, .form-check-label, .fs-4 {
@@ -22,7 +50,7 @@ h1, h2 {
 .btn-primary {
     cursor: pointer;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 2.1rem; /* Dit betekent 2.1 * 16px = 33.6px */
     box-shadow: none;
     transition: none;
     font-weight: 400;
