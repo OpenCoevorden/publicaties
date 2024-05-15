@@ -11,6 +11,7 @@ body {
     font-weight: normal;
     line-height: 1.71;
     letter-spacing: 0;
+    text-align: left; /* Lijn de tekst links uit */
 }
 
 .header {
@@ -29,6 +30,7 @@ h1 {
     line-height: 1.25;
     margin-bottom: 0.5em;
     letter-spacing: 0;
+    text-align: left; /* Lijn de tekst links uit */
 }
 
 h2 {
@@ -40,6 +42,7 @@ h2 {
     line-height: 1.71;
     margin-bottom: 1em;
     letter-spacing: 0;
+    text-align: left; /* Lijn de tekst links uit */
 }
 
 .form-label, .form-check-label, .fs-4 {
@@ -60,6 +63,7 @@ h2 {
     text-decoration: none;
     background-color: #95b521; /* Knop kleur */
     color: #ffffff;
+    text-align: left; /* Lijn de tekst links uit */
 }
 
 .btn-primary:hover {
@@ -72,7 +76,7 @@ h2 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: left; /* Lijn de tekst links uit */
 }
 
 .visually-hidden {
@@ -88,8 +92,22 @@ h2 {
 
 /* Stijlen voor inputvelden */
 input[type="number"] {
-    border: 1px solid #ccc; /* Dun grijs lijntje */
-    border-radius: 4px; /* Afgeronde hoeken */
+    color: rgb(85, 85, 85);
+    width: 100%;
+    border: 1px solid rgb(51, 51, 51);
+    margin: 0px;
+    display: block;
+    padding: 6px 20px;
+    font-size: 1.8rem;
+    max-width: 520px;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset;
+    min-height: 44px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    line-height: 1.5;
+    border-radius: 3px;
+    background-size: 16px 10px;
+    background-color: rgb(255, 255, 255);
+    background-image: none;
 }
 
 /* Verwijder border van fieldset */
