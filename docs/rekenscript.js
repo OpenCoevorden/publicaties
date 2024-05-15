@@ -14,6 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
             kosten += aantal * variabelTariefInworpen;
         }
 
-        document.getElementById('totaalBedrag').textContent = "Totaalbedrag in euro's: kosten;
+        document.getElementById('totaalBedrag').textContent = "Totaalbedrag: €" + kosten;
     });
 });
