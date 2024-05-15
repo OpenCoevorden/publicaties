@@ -2,7 +2,7 @@ body {
     background-color: #FFFFFF;
     color: #000;
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 14px;
     font-family: Arial, "Open Sans", sans-serif;
     font-weight: normal;
     line-height: 1.71;
@@ -22,7 +22,7 @@ h1, h2 {
 .btn-primary {
     cursor: pointer;
     padding: 10px 20px;
-    font-size: 2.1rem;
+    font-size: 16px;
     box-shadow: none;
     transition: none;
     font-weight: 400;
